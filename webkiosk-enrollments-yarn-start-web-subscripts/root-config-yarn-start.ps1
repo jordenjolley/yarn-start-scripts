@@ -1,5 +1,6 @@
-$workingDirectory = "C:\Path\To\Your\webkiosk-root-config"
+Import-Module ./config.psm1
+
 $command = "yarn start:web"
 
-Set-Location -Path $workingDirectory
+Set-Location -Path $rootConfigRepository
 Invoke-Expression -Command $command
